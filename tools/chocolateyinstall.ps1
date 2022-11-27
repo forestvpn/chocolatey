@@ -15,8 +15,8 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 #$fileLocation = '\\SHARE_LOCATION\to\INSTALLER_FILE'
 # Community Repo: Use official urls for non-redist binaries or redist where total package size is over 200MB
 # Internal/Organization: Download from internal location (internet sources are unreliable)
-$url        = 'https://github.com/forestvpn/cli/releases/download/v0.2.3-beta4/fvpn_windows_386.tar.gz'
-$url64      = 'https://github.com/forestvpn/cli/releases/download/v0.2.3-beta4/fvpn_windows_amd64.tar.gz'
+$url        = 'https://github.com/forestvpn/cli/releases/download/v0.2.3/fvpn_windows_386.tar.gz'
+$url64      = 'https://github.com/forestvpn/cli/releases/download/v0.2.3/fvpn_windows_amd64.tar.gz'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -26,9 +26,9 @@ $packageArgs = @{
   url64bit      = $url64
   #file         = $fileLocation
   softwareName  = 'fvpn*'
-  checksum      = 'ad83857ddd91d1901843d56926ec65d0b5b4162faf493952b0896b43ffeaa6c7'
+  checksum      = 'fbe3890d38f95869bc426641f2650280e49a671a00c4cf68bcbbfa497b5f4861'
   checksumType  = 'sha256'
-  checksum64    = '10e228a27d466a6f3e845ef238c01be998f7fcc6769378ad2d73ac04e6624fc3'
+  checksum64    = 'aa12bc8fb325635aee88879fcdc6b07fc010fb5ba007d03d87920fe376b1e37d'
   checksumType64= 'sha256'
 
   # MSI
