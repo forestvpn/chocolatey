@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>fvpn</id>
+    <version>0.2.3-beta4</version>
+    <packageSourceUrl>https://github.com/forestvpn/chocolatey</packageSourceUrl>
+    <owners>anatolio-deb</owners>
+    <title>fvpn</title>
+    <authors>ForestVPN, Anatolio Nikiforidis</authors>
+    <projectUrl>https://forestvpn.com</projectUrl>
+    <!-- There are a number of CDN Services that can be used for hosting the Icon for a package. More information can be found here: https://docs.chocolatey.org/en-us/create/create-packages#package-icon-guidelines -->
+    <!-- Here is an example using Githack -->
+    <!--<iconUrl>http://rawcdn.githack.com/__REPLACE_YOUR_REPO__/master/icons/fvpn.png</iconUrl>-->
+    <copyright>Copyright 2022 ForestVPN, Anatolio Nikiforidis</copyright>
+    <licenseUrl>https://github.com/forestvpn/cli/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/forestvpn/cli</projectSourceUrl>
+    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <!--<mailingListUrl></mailingListUrl>-->
+    <bugTrackerUrl>https://github.com/forestvpn/cli/issues</bugTrackerUrl>
+    <tags>cli vpn wireguard</tags>
+    <summary>ForestVPN - Fast, secure, and modern VPN.</summary>
+    <description>ForestVPN - Fast, secure, and modern VPN. </description>
+    <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
+    <!-- =============================== -->
+
+    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
+    <dependencies>
+      <dependency id="wireguard" version="0.5.3" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
