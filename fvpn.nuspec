@@ -23,8 +23,6 @@
     <description>ForestVPN - Fast, secure, and modern VPN. </description>
     <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
     <!-- =============================== -->
-
-    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
       <dependency id="wireguard" version="0.5.3" />
     </dependencies>
